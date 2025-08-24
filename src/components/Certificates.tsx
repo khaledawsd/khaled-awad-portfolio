@@ -11,7 +11,8 @@ const Certificates = () => {
       category: 'Cybersecurity',
       description: 'Industry-standard certification covering network security, compliance, threats, and vulnerabilities.',
       color: 'text-red-400',
-      bgColor: 'bg-red-400/20'
+      bgColor: 'bg-red-400/20',
+      link: 'https://www.credly.com/badges/929ece72-b8d7-45d1-afb6-94c7ef9e3a16/public_url'
     },
     {
       icon: Shield,
@@ -20,25 +21,8 @@ const Certificates = () => {
       category: 'Cybersecurity',
       description: 'Comprehensive program covering security frameworks, risk management, and incident response.',
       color: 'text-blue-400',
-      bgColor: 'bg-blue-400/20'
-    },
-    {
-      icon: Users,
-      title: 'Elite Live SOC Module',
-      issuer: 'Security Operations',
-      category: 'SOC Operations',
-      description: 'Advanced training in Security Operations Center procedures and real-time threat monitoring.',
-      color: 'text-purple-400',
-      bgColor: 'bg-purple-400/20'
-    },
-    {
-      icon: Trophy,
-      title: "Beginner's Journey in CTF",
-      issuer: 'CTF Platform',
-      category: 'Ethical Hacking',
-      description: 'Foundational certification in Capture The Flag competitions and ethical hacking methodologies.',
-      color: 'text-yellow-400',
-      bgColor: 'bg-yellow-400/20'
+      bgColor: 'bg-blue-400/20',
+      link: 'https://coursera.org/share/c150f9a56cdd62765cb91e1acc7d8b82'
     },
     {
       icon: Brain,
@@ -47,7 +31,18 @@ const Certificates = () => {
       category: 'Artificial Intelligence',
       description: 'Introduction to AI concepts, machine learning basics, and AI applications in cybersecurity.',
       color: 'text-green-400',
-      bgColor: 'bg-green-400/20'
+      bgColor: 'bg-green-400/20',
+      link: 'https://coursera.org/share/cc0f3f9ac6ea61c04a12f0ccce8af4fc'
+    },
+    {
+      icon: Users,
+      title: 'Elite Live SOC Module',
+      issuer: 'Security Operations',
+      category: 'SOC Operations',
+      description: 'Advanced training in Security Operations Center procedures and real-time threat monitoring.',
+      color: 'text-purple-400',
+      bgColor: 'bg-purple-400/20',
+      link: 'https://drive.google.com/file/d/18aA2Dz_e0GdA194wpX54nOncoBvFTSqu/view?usp=sharing'
     }
   ];
 
@@ -85,7 +80,14 @@ const Certificates = () => {
               </div>
               
               <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
-                {cert.title}
+                <a 
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  {cert.title}
+                </a>
               </h3>
               
               <p className="text-sm text-primary font-medium mb-3">
