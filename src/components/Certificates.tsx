@@ -43,6 +43,16 @@ const Certificates = () => {
       color: 'text-purple-400',
       bgColor: 'bg-purple-400/20',
       link: 'https://drive.google.com/file/d/18aA2Dz_e0GdA194wpX54nOncoBvFTSqu/view?usp=sharing'
+    },
+    {
+      icon: Trophy,
+      title: 'A Beginner\'s Journey in CTF',
+      issuer: 'Asia Pacific University',
+      category: 'Capture The Flag',
+      description: 'Introduction to Capture The Flag competitions and cybersecurity challenges.',
+      color: 'text-orange-400',
+      bgColor: 'bg-orange-400/20',
+      link: 'https://drive.google.com/file/d/18aA2Dz_e0GdA194wpX54nOncoBvFTSqu/view?usp=sharing'
     }
   ];
 
