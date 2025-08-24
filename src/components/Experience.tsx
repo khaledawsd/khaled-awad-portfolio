@@ -3,20 +3,35 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const Experience = () => {
-  const experience = {
-    company: 'ALVA Productions',
-    position: 'Applications Developer Intern',
-    duration: 'Aug 2023 – Nov 2023',
-    location: 'Remote',
-    achievements: [
-      'Built cross-platform mobile applications using Flutter framework',
-      'Gained extensive experience in Dart programming language and modern UI/UX principles',
-      'Delivered secure and optimized features focusing on performance and user experience',
-      'Collaborated with senior developers to implement best practices in mobile development',
-      'Participated in code reviews and agile development processes'
-    ],
-    technologies: ['Flutter', 'Dart', 'Mobile Development', 'UI/UX', 'Agile']
-  };
+  const experiences = [
+    {
+      company: 'Qatar Mobility Innovations Center (QMIC)',
+      position: 'Mobile Development Intern',
+      duration: 'Jul 2024 – Sep 2024',
+      location: 'Qatar',
+      achievements: [
+        'Worked on the Mobile Development team focusing on backend functionality using Python',
+        'Contributed to AI automation for a specific feature',
+        'Gained exposure to Flutter for mobile development',
+        'Collaborated with cross-functional teams on innovative mobility solutions'
+      ],
+      technologies: ['Python', 'Flutter', 'AI Automation', 'Backend Development', 'Mobile Development']
+    },
+    {
+      company: 'ALVA Productions',
+      position: 'Applications Developer Intern',
+      duration: 'Aug 2023 – Nov 2023',
+      location: 'Remote',
+      achievements: [
+        'Built cross-platform mobile applications using Flutter framework',
+        'Gained extensive experience in Dart programming language and modern UI/UX principles',
+        'Delivered secure and optimized features focusing on performance and user experience',
+        'Collaborated with senior developers to implement best practices in mobile development',
+        'Participated in code reviews and agile development processes'
+      ],
+      technologies: ['Flutter', 'Dart', 'Mobile Development', 'UI/UX', 'Agile']
+    }
+  ];
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/20">
@@ -32,63 +47,68 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative space-y-8">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent" />
           
-          <Card className="relative pl-20 p-8 bg-card-gradient border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated animate-fade-in-up">
-            {/* Timeline dot */}
-            <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow" />
-            
-            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">
-                  {experience.position}
-                </h3>
-                <h4 className="text-xl text-primary font-semibold mb-4">
-                  {experience.company}
-                </h4>
-              </div>
+          {experiences.map((experience, index) => (
+            <Card 
+              key={index}
+              className="relative pl-20 p-8 bg-card-gradient border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated animate-fade-in-up"
+            >
+              {/* Timeline dot */}
+              <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow" />
               
-              <div className="flex flex-col lg:text-right space-y-2">
-                <div className="flex items-center lg:justify-end text-muted-foreground">
-                  <Calendar size={16} className="mr-2" />
-                  <span className="text-sm">{experience.duration}</span>
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                    {experience.position}
+                  </h3>
+                  <h4 className="text-xl text-primary font-semibold mb-4">
+                    {experience.company}
+                  </h4>
                 </div>
-                <div className="flex items-center lg:justify-end text-muted-foreground">
-                  <MapPin size={16} className="mr-2" />
-                  <span className="text-sm">{experience.location}</span>
+                
+                <div className="flex flex-col lg:text-right space-y-2">
+                  <div className="flex items-center lg:justify-end text-muted-foreground">
+                    <Calendar size={16} className="mr-2" />
+                    <span className="text-sm">{experience.duration}</span>
+                  </div>
+                  <div className="flex items-center lg:justify-end text-muted-foreground">
+                    <MapPin size={16} className="mr-2" />
+                    <span className="text-sm">{experience.location}</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="mb-6">
-              <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements:</h5>
-              <ul className="space-y-3">
-                {experience.achievements.map((achievement, index) => (
-                  <li key={index} className="flex items-start text-muted-foreground">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0" />
-                    <span>{achievement}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h5 className="text-lg font-semibold mb-3 text-foreground">Technologies Used:</h5>
-              <div className="flex flex-wrap gap-2">
-                {experience.technologies.map((tech, index) => (
-                  <Badge 
-                    key={index} 
-                    variant="secondary"
-                    className="bg-secondary hover:bg-primary hover:text-background transition-colors"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
+              <div className="mb-6">
+                <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements:</h5>
+                <ul className="space-y-3">
+                  {experience.achievements.map((achievement, achievementIndex) => (
+                    <li key={achievementIndex} className="flex items-start text-muted-foreground">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0" />
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
-          </Card>
+
+              <div>
+                <h5 className="text-lg font-semibold mb-3 text-foreground">Technologies Used:</h5>
+                <div className="flex flex-wrap gap-2">
+                  {experience.technologies.map((tech, techIndex) => (
+                    <Badge 
+                      key={techIndex} 
+                      variant="secondary"
+                      className="bg-secondary hover:bg-primary hover:text-background transition-colors"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
