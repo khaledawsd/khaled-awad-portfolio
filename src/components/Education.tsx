@@ -11,8 +11,7 @@ const Education = () => {
       'Comprehensive study of cybersecurity principles and practices',
       'Hands-on experience with security tools and methodologies',
       'Focus on secure software development and ethical hacking',
-      'Network security and digital forensics specialization',
-      'Active participation in cybersecurity competitions and workshops'
+      'Network security and digital forensics specialization'
     ]
   };
 

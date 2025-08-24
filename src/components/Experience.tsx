@@ -7,7 +7,7 @@ const Experience = () => {
     {
       company: 'Qatar Mobility Innovations Center (QMIC)',
       position: 'Mobile Development Intern',
-      duration: 'Jul 2024 – Sep 2024',
+      duration: 'Jul 2025 – Sep 2025',
       location: 'Qatar',
       achievements: [
         'Worked on the Mobile Development team focusing on backend functionality using Python',
