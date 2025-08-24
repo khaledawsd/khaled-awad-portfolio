@@ -49,15 +49,15 @@ const Experience = () => {
 
         <div className="relative space-y-8">
           {/* Timeline line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent transform -translate-x-1/2" />
+          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent" />
           
           {experiences.map((experience, index) => (
             <Card 
               key={index}
-              className="relative pl-8 pr-8 p-8 bg-card-gradient border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated animate-fade-in-up"
+              className="relative pl-16 p-8 bg-card-gradient border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated animate-fade-in-up"
             >
               {/* Timeline dot */}
-              <div className="absolute left-1/2 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow transform -translate-x-1/2" />
+              <div className="absolute left-4 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow" />
               
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                 <div>
@@ -85,8 +85,8 @@ const Experience = () => {
                 <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements:</h5>
                 <ul className="space-y-3 pl-0">
                   {experience.achievements.map((achievement, achievementIndex) => (
-                    <li key={achievementIndex} className="flex items-start text-muted-foreground">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0" />
+                    <li key={achievementIndex} className="flex items-center text-muted-foreground">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0" />
                       <span className="leading-relaxed">{achievement}</span>
                     </li>
                   ))}
