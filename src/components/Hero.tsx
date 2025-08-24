@@ -41,7 +41,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-accent-gradient hover:shadow-glow transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://github.com/khaledawad', '_blank')}
+              onClick={() => window.open('https://github.com/khaledawsd', '_blank')}
             >
               <Github className="mr-2 h-5 w-5" />
               View GitHub
@@ -51,7 +51,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://linkedin.com/in/khaledawad', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/khaled-awad-018689267/', '_blank')}
             >
               <Linkedin className="mr-2 h-5 w-5" />
               Connect on LinkedIn

@@ -25,15 +25,15 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/khaledawad',
-      href: 'https://github.com/khaledawad',
+      value: 'github.com/khaledawsd',
+      href: 'https://github.com/khaledawsd',
       color: 'text-purple-400'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/khaledawad',
-      href: 'https://linkedin.com/in/khaledawad',
+      value: 'linkedin.com/in/khaled-awad-018689267',
+      href: 'https://www.linkedin.com/in/khaled-awad-018689267/',
       color: 'text-cyan-400'
     }
   ];
@@ -102,7 +102,7 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://linkedin.com/in/khaledawad', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/khaled-awad-018689267/', '_blank')}
               >
                 <Linkedin className="mr-2 h-5 w-5" />
                 Connect on LinkedIn
@@ -135,7 +135,7 @@ const Contact = () => {
                 <Button
                   size="sm"
                   variant="ghost"
-                  onClick={() => window.open('https://github.com/khaledawad', '_blank')}
+                  onClick={() => window.open('https://github.com/khaledawsd', '_blank')}
                   className="h-8 w-8 p-0 hover:bg-primary/20"
                 >
                   <Github size={16} />
@@ -143,7 +143,7 @@ const Contact = () => {
                 <Button
                   size="sm"
                   variant="ghost"
-                  onClick={() => window.open('https://linkedin.com/in/khaledawad', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/khaled-awad-018689267/', '_blank')}
                   className="h-8 w-8 p-0 hover:bg-primary/20"
                 >
                   <Linkedin size={16} />

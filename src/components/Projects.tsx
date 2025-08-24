@@ -17,8 +17,8 @@ const Projects = () => {
         'Rental Management Dashboard',
         'Admin Control Panel'
       ],
-      githubLink: '#',
-      demoLink: '#'
+      githubLink: 'https://github.com/khaledawsd/Car-Rental-App',
+      demoLink: 'https://github.com/khaledawsd/Car-Rental-App'
     },
     {
       icon: Lock,
@@ -32,8 +32,8 @@ const Projects = () => {
         'Security Benchmarking',
         'Algorithm Comparison'
       ],
-      githubLink: '#',
-      demoLink: '#'
+      githubLink: 'https://github.com/khaledawsd/IES-by-Tkinter',
+      demoLink: 'https://github.com/khaledawsd/IES-by-Tkinter'
     }
   ];
 
